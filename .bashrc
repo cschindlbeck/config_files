@@ -141,6 +141,7 @@ source ~/arm_ws/devel/setup.bash
 # BASH
 ################
 
-alias cat='pygmentize -g'
+alias cat='pygmentize -g'  # nice syntax highlighting for cat
+alias rm=trash  # rm to trash instead of loosing it forever
 
 export LC_NUMERIC="en_US.UTF-8"
