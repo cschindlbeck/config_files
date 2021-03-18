@@ -1,6 +1,7 @@
 set background=dark 
 
 set ff=unix
+set rnu
 
 " VIM: Configuration File
 " Description: Optimized for C/C++ development, but useful also for other things.
