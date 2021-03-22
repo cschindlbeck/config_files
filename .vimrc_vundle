@@ -46,7 +46,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Add plugins here
-Plugin 'tomasiser/vim-code-dark'
+Plugin 'tomasiser/vim-code-dark' " Dark theme
+Plugin 'vim-airline/vim-airline' " Colored status bar
 
 call vundle#end()
 filetype plugin indent on
