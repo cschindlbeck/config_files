@@ -78,7 +78,11 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icondirvcs)
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git 
+         z 
+         zsh-syntax-highlighting 
+         zsh-autosuggestions
+         )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,6 +115,11 @@ source $ZSH/oh-my-zsh.sh
 # git
 source /opt/ros/melodic/setup.zsh
 source ~/arm_base_ws/devel/setup.zsh
+
+# vim 
+bindkey -v # vim mode, press esc to go into normal mode in command line shows < instead of >
+bindkey '^R' history-incremental-search-backward # preserves ctrl-R for backward search
+export KEYTIMEOUT=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
