@@ -80,9 +80,9 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icondirvcs)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
          z 
-         zsh-syntax-highlighting 
-         zsh-autosuggestions
-         zsh-vi-mode
+         zsh-syntax-highlighting  # https://github.com/zsh-users/zsh-syntax-highlighting.git 
+         zsh-autosuggestions      # https://github.com/zsh-users/zsh-autosuggestions.git
+         zsh-vi-mode              # https://github.com/jeffreytse/zsh-vi-mode.git
          )
 
 source $ZSH/oh-my-zsh.sh
