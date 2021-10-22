@@ -113,12 +113,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#############
-# ROS
-#############
-source /opt/ros/melodic/setup.zsh
-source ~/arm_base_ws/devel/setup.zsh
-
 # default vim, use zsh-vi-mode plugin instead
 # bindkey -v # vim mode, press esc to go into normal mode in command line shows < instead of >
 # bindkey '^R' history-incremental-search-backward # preserves ctrl-R for backward search
@@ -147,3 +141,17 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#############
+# ROS
+#############
+source /opt/ros/melodic/setup.zsh
+source ~/arm_base_ws/devel/setup.zsh
+
+#export ROS_IP=192.168.10.102
+#export ROS_MASTER_URI=http://192.168.10.2:11311/
+
+#############
+# PYTHON
+#############
+export PYTHONPATH="${PYTHONPATH}:~/arbitrage"
