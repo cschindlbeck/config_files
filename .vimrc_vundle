@@ -54,8 +54,17 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Add plugins here
-Plugin 'tomasiser/vim-code-dark' " Dark theme
-Plugin 'vim-airline/vim-airline' " Colored status bar
+Plugin 'tomasiser/vim-code-dark'        " Dark theme
+Plugin 'vim-airline/vim-airline'        " Colored status bar
+Plugin 'vim-airline/vim-airline-themes' " Themes for airline
+Plugin 'junegunn/fzf'                   " Fuzzy search
+Plugin 'junegunn/fzf.vim'               " Fuzzy search wrapper
+Plugin 'jremmen/vim-ripgrep'            " Ripgrep, grep from vim command line
+Plugin 'tpope/vim-fugitive'             " Git plugin
+Plugin 'scrooloose/nerdtree'            " File tree explorer
+"Plugin 'oblitum/rainbow'                " Colorful parentheses
+Plugin 'junegunn/rainbow_parentheses.vim'
+
 
 call vundle#end()
 filetype plugin indent on
