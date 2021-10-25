@@ -2,13 +2,23 @@
 
 This repo contains useful snippets/templates for various dotfiles:
 
-## Bashrc
-
-Use zshell instead, but if you really have to use the bashrc
-
 ## Zsh 
 
-Oh my zsh
+Install Zsh on Ubuntu
+
+```sh
+$ sudo apt install zsh
+```
+
+Change to zsh as default shell
+
+```sh
+chsh -s $(which zsh)
+```
+
+Oh my Zsh
+
+Install Oh my Zsh
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -21,19 +31,50 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+Config is defined in .zshrc
 
-.zshrc config
+## Bashrc
+
+Use zshell instead, but if you really have to use the bashrc, you can find the .bashrc here
 
 ## Vim
 
-Vim with vundle plugins, need to install vundle
+Vim with vundle plugins, need to install vundle via 
+
+```sh
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+Plugins are defined in the vimrc and installed via :PluginInstall
+
+My plugins:
+ - Vim-code-dark: Dark theme
+ - Airline: Nice status bar
+ - FZF: Fuzzy file search
+ - Ripgrep: Grep for vim
+ - Fugitive: Popular git plugin
+ - Nerdtree: File tree explorer
+ - Rainbow_Parentheses: Colorful parentheses
 
 ## Git
 
-Various helper aliases, git graph via CLI
+Git config provides various helper:
+ - Mergetool config (not tested/used right now)
+ - Aliases, git graph via CLI
 
 ## Tmux
 
-Follow this:
+Install tmux 
 
-https://dev.to/andrenbrandao/terminal-setup-with-zsh-tmux-dracula-theme-48lm
+```sh
+sudo apt-get install tmux
+```
+
+In the future: 
+
+Install plugin manager tpm
+
+```sh
+tmux source .tmux.conf
+```
+
