@@ -95,7 +95,7 @@ My plugins:
 
 ## Vim Config Generator
 
-(Vim Bootstrap)[https://vim-bootstrap.com/] is a tool similar to gitignore.io that generates a vimrc / init.vim based on your tool preferences
+[Vim Bootstrap](https://vim-bootstrap.com/) is a tool similar to gitignore.io that generates a vimrc / init.vim based on your tool preferences
 
 ## Git
 
