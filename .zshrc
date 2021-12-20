@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -80,9 +80,11 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icondirvcs)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
          z 
+         fzf                      # install junegunn/fzf first https://github.com/junegunn/fzf
          zsh-syntax-highlighting  # https://github.com/zsh-users/zsh-syntax-highlighting.git 
          zsh-autosuggestions      # https://github.com/zsh-users/zsh-autosuggestions.git
          zsh-vi-mode              # https://github.com/jeffreytse/zsh-vi-mode.git
+         #fzf-tab # to turn it on and off: toggle-fzf-tab
          )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,6 +119,10 @@ source $ZSH/oh-my-zsh.sh
 # bindkey -v # vim mode, press esc to go into normal mode in command line shows < instead of >
 # bindkey '^R' history-incremental-search-backward # preserves ctrl-R for backward search
 # export KEYTIMEOUT=1
+#
+# By default, vi-mode breaks fzf key bindings, this helps
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
 
 #############
 # History 
@@ -142,11 +148,13 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
 #############
 # ROS
 #############
 source /opt/ros/melodic/setup.zsh
-source ~/arm_base_ws/devel/setup.zsh
+#source ~/arm_base_ws/devel/setup.zsh
+xhost + &> /dev/null
 
 #export ROS_IP=192.168.10.102
 #export ROS_MASTER_URI=http://192.168.10.2:11311/
@@ -155,3 +163,4 @@ source ~/arm_base_ws/devel/setup.zsh
 # PYTHON
 #############
 export PYTHONPATH="${PYTHONPATH}:~/arbitrage"
+
