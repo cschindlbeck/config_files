@@ -44,7 +44,6 @@ Config is defined in .zshrc
 
 Each plugin must be install, e.g. such as
 
-
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
