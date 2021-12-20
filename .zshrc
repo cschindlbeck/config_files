@@ -80,6 +80,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icondirvcs)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
          z 
+         docker
+         docker-compose
          fzf                      # install junegunn/fzf first https://github.com/junegunn/fzf
          zsh-syntax-highlighting  # https://github.com/zsh-users/zsh-syntax-highlighting.git 
          zsh-autosuggestions      # https://github.com/zsh-users/zsh-autosuggestions.git
@@ -152,7 +154,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 #############
 # ROS
 #############
-source /opt/ros/melodic/setup.zsh
+#source /opt/ros/melodic/setup.zsh
 #source ~/arm_base_ws/devel/setup.zsh
 xhost + &> /dev/null
 
