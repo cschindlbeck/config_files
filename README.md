@@ -7,7 +7,7 @@ This repo contains useful snippets/templates for various dotfiles:
 Install Zsh on Ubuntu
 
 ```sh
-$ sudo apt install zsh
+sudo apt install zsh
 ```
 
 Change to zsh as default shell
@@ -29,13 +29,51 @@ Powerlevel 10k configuration
 ```sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
+
+Use 
+
+```sh
+p10k configure
+```
+
+or try to copy .p10k.zsh (not tested)
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 Config is defined in .zshrc
 
+Each plugin must be install, e.g. such as
+
+
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+```sh
+git clone https://github.com/jeffreytse/zsh-vi-mode \
+  $ZSH/custom/plugins/zsh-vi-mode
+```
+
 ## Bashrc
 
 Use zshell instead, but if you really have to use the bashrc, you can find the .bashrc here
+
+## Neovim
+
+```sh
+sudo apt-get install neovim
+```
+
+Create folder for vim init config (vimrc is init.vim in neovim)
+
+```sh
+mkdir ~/.config/nvim
+nvim ~/.config/nvim/init.vim
+```
 
 ## Vim
 
@@ -55,6 +93,10 @@ My plugins:
  - Fugitive: Popular git plugin
  - Nerdtree: File tree explorer
  - Rainbow_Parentheses: Colorful parentheses
+
+## Vim Config Generator
+
+(Vim Bootstrap)[https://vim-bootstrap.com/] is a tool similar to gitignore.io that generates a vimrc / init.vim based on your tool preferences
 
 ## Git
 
