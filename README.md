@@ -61,6 +61,13 @@ git clone https://github.com/jeffreytse/zsh-vi-mode \
   $ZSH/custom/plugins/zsh-vi-mode
 ```
 
+## fzf
+
+```sh
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
 ## Bashrc
 
 Use zshell instead, but if you really have to use the bashrc, you can find the .bashrc here
