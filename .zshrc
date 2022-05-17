@@ -78,11 +78,11 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icondirvcs)
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker
+plugins=(git 
+         z 
+         docker
          docker-compose
          fzf                      # install junegunn/fzf first https://github.com/junegunn/fzf
-         gitfast                  # Replaces git plugin https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast
-         z 
          zsh-syntax-highlighting  # https://github.com/zsh-users/zsh-syntax-highlighting.git 
          zsh-autosuggestions      # https://github.com/zsh-users/zsh-autosuggestions.git
          zsh-vi-mode              # https://github.com/jeffreytse/zsh-vi-mode.git
@@ -157,8 +157,7 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 #source /opt/ros/melodic/setup.zsh
 #source ~/arm_base_ws/devel/setup.zsh
 xhost + &> /dev/null
-export UID=${UID}
-export GID=${GID}
+
 #export ROS_IP=192.168.10.102
 #export ROS_MASTER_URI=http://192.168.10.2:11311/
 
