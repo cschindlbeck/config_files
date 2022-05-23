@@ -61,16 +61,9 @@ git clone https://github.com/jeffreytse/zsh-vi-mode \
   $ZSH/custom/plugins/zsh-vi-mode
 ```
 
-## fzf
-
-```sh
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-```
-
 ## Bashrc
 
-Use zshell instead, but if you really have to use the bashrc, you can find the .bashrc here
+Use zshell instead (or try fish shell), but if you really have to use the bashrc, you can find the .bashrc here
 
 ## Neovim
 
@@ -130,3 +123,33 @@ Install plugin manager tpm
 tmux source .tmux.conf
 ```
 
+## Replacing legacy CLI tools 
+
+- exa/lsd replacing ls
+
+- z replacing cd (zoxide)
+
+- bat replacing cat
+
+- fd replacing find
+
+- diff-so-fancy/ delta replacing git diff
+
+- tldr replacing man
+
+- htop replacing top
+
+## More handy cli tools
+
+- ranger - file navigation
+
+- fzf
+
+    ```sh
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+    ```
+
+- fuck - thefuck
+
+- ctop -> Docker container top (not working yet)

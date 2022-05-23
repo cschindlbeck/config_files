@@ -166,3 +166,12 @@ xhost + &> /dev/null
 #############
 export PYTHONPATH="${PYTHONPATH}:~/arbitrage"
 
+#############
+# ALIASES
+#############
+alias ls="exa -l"
+alias fd="fdfind"
+alias cat="batcat"
+alias cd="z"
+
+eval $(thefuck --alias)
