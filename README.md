@@ -1,3 +1,8 @@
+
+# ⚡ DEPRECIATION WARNING ⚡ 
+
+This repo is not maintained anymore as I am moving to setup my dotfiles via ansible. 
+
 # dotfiles
 
 This repo contains useful snippets/templates for various dotfiles:
